@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C1C24;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2C2C38;
+}
+
+/* -------------------------------------------------------------
+   Cinematic Editorial & Glassmorphism Design System
+   Inspired by High-End Sports Tech & The Reference Aesthetic
+   ------------------------------------------------------------- */
+
+/* Frosted Glass Panels */
+.glass-panel {
+  background: rgba(18, 18, 24, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-subtle {
+  background: rgba(16, 16, 22, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-pill {
+  background: rgba(22, 22, 28, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* High-Contrast Interactive Glass Cards */
+.glass-card-interactive {
+  background: rgba(18, 18, 24, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.65);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-interactive:hover {
+  transform: translateY(-4px);
+  background: rgba(24, 24, 32, 0.75);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(255, 255, 255, 0.06);
+}
+
+/* Reference Aesthetic Typography */
+.font-display-hero {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.font-editorial {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Double-slash accent symbol */
+.slash-accent {
+  color: #FF5E1E;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.1em;
+  margin-right: 0.25rem;
+}
+
+/* Cinematic Vignette Overlays */
+.cinematic-vignette {
+  background: radial-gradient(circle at 60% 40%, transparent 20%, rgba(8, 8, 10, 0.7) 70%, #08080A 100%);
+}
+
+.cinematic-gradient-bottom {
+  background: linear-gradient(to bottom, transparent 0%, rgba(8, 8, 10, 0.4) 50%, #08080A 100%);
+}
+
+.cinematic-gradient-top {
+  background: linear-gradient(to top, transparent 0%, rgba(8, 8, 10, 0.6) 80%, #08080A 100%);
+}
+
+.cinematic-orange-radial {
+  background: radial-gradient(circle at 65% 35%, rgba(255, 94, 30, 0.15) 0%, transparent 60%);
+}
+
+.cinematic-lime-radial {
+  background: radial-gradient(circle at 30% 70%, rgba(199, 255, 61, 0.08) 0%, transparent 50%);
+}
+
+/* Subtle tech grid background */
+.bg-tech-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* Anatomical SVG hover effects (Preserving 2D Map) */
+.muscle-part {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.muscle-part:hover {
+  filter: drop-shadow(0 0 10px #C7FF3D);
+  fill: #C7FF3D !important;
+}
+
+.muscle-part.active {
+  filter: drop-shadow(0 0 16px #C7FF3D);
+  fill: #C7FF3D !important;
+}
